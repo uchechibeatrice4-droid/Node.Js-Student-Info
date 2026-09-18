@@ -1,0 +1,12 @@
+{
+  "name": "student-info",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemom app.js"
+  },
+  "keywords": [],
+  "author": "Uchechi Peter",
+  "license": "ISC",
+  "description": "Task"
+}
