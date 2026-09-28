@@ -32,6 +32,18 @@ console.log("Status Added Successfully");
 const updatedContent = fs.readFileSync('data/student.txt', 'utf-8');
 console.log("File Updated Successfully"); 
 
+// CREATE A VARIBLE WITH STRINGIFY
+const jsonData = JSON.stringify(student);
+console.log("JSON Data:", jsonData);
+
+// CREATE A VARIBLE WITH PARSE
+const parsedData = JSON.parse(jsonData);
+console.log("Parsed Data:", parsedData);
+
+const studentData = fs.readFileSync('data/student.json', 'utf-8');
+const studentArray = JSON.parse(studentData);
+console.log("Student Array:", studentArray);
+
 // CREATE HTTP SERVER
 const server = http.createServer((req, res) => {
     if (req.url === "/") {
